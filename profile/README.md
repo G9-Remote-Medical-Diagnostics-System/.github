@@ -1,69 +1,87 @@
 # G9 Remote Medical Diagnostics System
 
-Welcome to the official GitHub organization for the **G9 Remote Medical Diagnostics System (RMDS)** — an innovative, AI-powered healthcare platform designed to deliver early-stage diagnostic support to underserved and remote communities, with a focus on accessibility, accuracy, and connectivity.
+Welcome to the official GitHub organization for the **G9 Remote Medical Diagnostics System (RMDS)** — a groundbreaking initiative to harness Artificial Intelligence and modern digital technologies to deliver preliminary healthcare diagnostics to communities in rural and underserved regions, starting with Kenya. Our goal is to revolutionize access to early-stage medical support and empower local health ecosystems with scalable, reliable, and intelligent tools.
 
----
+## About Us
 
-## 🌍 About Us
+**G9-RMDS** is an innovation-driven project developed by a passionate team of student engineers, AI researchers, system designers, and public health enthusiasts from **Masinde Muliro University of Science and Technology**. This is more than a technical project — it is a social innovation that reflects our deep commitment to improving healthcare equity and inclusion.
 
-**G9-RMDS** is a multidisciplinary initiative by a dedicated team of developers, AI researchers, health informatics experts, and public health advocates. Our mission is to bridge the healthcare access gap in rural and marginalized regions by deploying a robust, scalable, and secure remote diagnostics system.
+We believe that access to diagnostic healthcare should not be limited by geography or infrastructure. With RMDS, we are building a full-stack, AI-powered ecosystem capable of supporting health workers and patients in remote areas using minimal hardware and intermittent connectivity.
 
-We leverage **Artificial Intelligence**, **IoT integrations**, **offline-first mobile apps**, and **secure cloud infrastructure** to enable community health workers and patients to receive fast, reliable health assessments—even in low-connectivity environments.
+This is a project we are proud to develop, as it reflects our dedication to technology with purpose and our responsibility as the next generation of African innovators.
 
----
+## Project Objectives
 
-## 🧩 Project Structure
+- Enable AI-based diagnosis from user-input symptoms and sensor data.
+- Support data input from smart health devices (e.g., thermometer, BP monitors).
+- Provide patients with guided recommendations: self-care, visit a clinic, or seek emergency attention.
+- Link patients with nearby health providers via maps or direct referrals.
+- Work seamlessly even in areas with poor or no connectivity using offline-first design.
+- Ensure patient data is secure, encrypted, and ethically handled.
 
-Our organization is divided into modular repositories to support collaborative and scalable development:
+## Project Structure
 
-- [`rmds mobile app`](https://github.com/G9-Remote-Medical-Diagnostics-System/RMDSApp) — Android/iOS app for symptom input, diagnosis, and clinic locator
-- [`rmds web app`](https://github.com/G9-Remote-Medical-Diagnostics-System/RMDSWebsite) — Browser-based interface with the same core functionality as the mobile app
-- [`rmds backend api`](https://github.com/G9-Remote-Medical-Diagnostics-System/RMDSBackend) — REST/GraphQL backend service for user management, diagnosis logging, and data flow
-- [`rmds ai engine`](https://github.com/G9-Remote-Medical-Diagnostics-System/RMDS_Ai_Engine) — AI/ML engine for diagnosis prediction and triage recommendations
-- [`rmds iot module`](https://github.com/G9-Remote-Medical-Diagnostics-System/RMDS_Iot_Module) — Bluetooth and sensor integration with smart health devices
-- [`rmds admin dashboard`](https://github.com/G9-Remote-Medical-Diagnostics-System/RMDSAdminDashboard) — Portal for doctors and health workers to monitor patient activity and follow up
-- [`rmds devops`](https://github.com/G9-Remote-Medical-Diagnostics-System/RMDSDevops) — CI/CD, infrastructure automation, monitoring, and deployments
-- [`rmds docs`](https://github.com/G9-Remote-Medical-Diagnostics-System/RMDSDocs) — Project documentation, API references, data flow diagrams, and development guides
+To ensure modularity and scalability, our development is organized into the following repositories:
 
----
+### [`rmds mobile app`](https://github.com/G9-Remote-Medical-Diagnostics-System/RMDSApp)
+The mobile client application (Android/iOS) that allows users to input symptoms, upload optional data (images, temperature, audio), receive AI-based diagnostic feedback, and view nearby health services. Built with offline-first support and optimized for low-spec devices.
 
-## 🔐 Our Focus Areas
+### [`rmds web app`](https://github.com/G9-Remote-Medical-Diagnostics-System/RMDSWebsite)
+A responsive web interface offering similar diagnostic functionality for use in community health centers or clinics with browser access. Also serves as an admin panel for public health officers.
 
-- **AI-Powered Symptom Analysis**
-- **IoT-Based Health Data Collection**
-- **Offline-First Mobile Experience**
-- **End-to-End Data Encryption and Privacy**
-- **Scalable Cloud Infrastructure**
-- **Community-Centered Design**
+### [`rmds backend api`](https://github.com/G9-Remote-Medical-Diagnostics-System/RMDSBackend)
+The secure API layer that connects mobile/web clients with core backend services, handles user authentication, stores patient diagnostics, manages communication with the AI engine, and integrates external health databases.
 
----
+### [`rmds ai engine`](https://github.com/G9-Remote-Medical-Diagnostics-System/RMDS_Ai_Engine)
+A core module built around machine learning models that analyze symptom and sensor data to suggest probable diagnoses and triage recommendations. Also supports natural language processing for voice/text inputs (future).
 
-## 👥 Contribution Guidelines
+### [`rmds iot module`](https://github.com/G9-Remote-Medical-Diagnostics-System/RMDS_Iot_Module)
+A Bluetooth and USB-based module that supports integration with smart medical devices such as thermometers, pulse oximeters, and blood pressure monitors, allowing automatic data collection from patients.
 
-We welcome contributions from developers, healthcare professionals, and researchers. Visit [`rmds docs`](https://github.com/G9-Remote-Medical-Diagnostics-System/RMDSDocs) to learn how to contribute, raise issues, or request new features.
+### [`rmds admin dashboard`](https://github.com/G9-Remote-Medical-Diagnostics-System/RMDSAdminDashboard)
+An administrative interface for doctors, healthcare professionals, and community workers to monitor diagnostics, receive flagged high-risk cases, follow up with patients, and manage referrals.
 
-If you're interested in collaborating, please open a discussion or contact us via email listed in the documentation.
+### [`rmds devops`](https://github.com/G9-Remote-Medical-Diagnostics-System/RMDSDevops)
+Infrastructure automation, CI/CD pipelines, monitoring scripts, cloud provisioning, and other tools to ensure stable, secure, and automated deployments for all system components.
 
----
+### [`rmds docs`](https://github.com/G9-Remote-Medical-Diagnostics-System/RMDSDocs)
+Comprehensive documentation for contributors, including system architecture, API references, AI model pipelines, deployment instructions, and compliance guidelines.
 
-## 📚 Useful Resources
+## Our Technical Stack
 
-- **Project Wiki** – Comprehensive developer and deployment documentation  
-- **AI Model Reference** – Data schemas, training approach, and model pipeline  
-- **Health Privacy Compliance** – Details on our data privacy and ethical standards
+- **Frontend**: React Native, Flutter, HTML5, Tailwind, JavaScript
+- **Backend**: Node.js, Express, Firebase, MongoDB, PostgreSQL
+- **AI/ML**: Python, TensorFlow, Scikit-learn, FastAPI
+- **IoT Integration**: BLE, Arduino, low-cost smart sensors
+- **DevOps**: Docker, GitHub Actions, Firebase Hosting, DigitalOcean, Netlify
+- **Security**: HTTPS, JWT Auth, OAuth2, AES data encryption
 
----
+## Key Features
 
-## 🤝 License
+- AI-assisted symptom analysis and probable diagnosis
+- Bluetooth health device data collection
+- Referral system with real-time clinic locator
+- Offline-mode support and local caching
+- Role-based access (patients, health workers, doctors)
+- Secure and private by design (HIPAA-like compliance model)
 
-All RMDS repositories are released under the [MIT License](https://choosealicense.com/licenses/mit/), unless stated otherwise. Contributors retain copyright.
+## Contribution Guidelines
 
----
+We welcome contributions from software engineers, data scientists, health workers, medical researchers, and open-source contributors. You can get involved by:
 
-## 📢 Get Involved
+- Forking any repository and submitting pull requests
+- Raising or resolving issues
+- Contributing data or AI models
+- Improving documentation
 
-We’re building a future where **no one is left behind due to geography or infrastructure limitations**. Join us in shaping accessible, intelligent, and impactful health solutions for communities in need.
+Please refer to the [`rmds docs`](https://github.com/G9-Remote-Medical-Diagnostics-System/RMDSDocs) repository for technical contribution guidelines and our collaboration roadmap.
 
----
+## Licensing
 
-> Built with purpose. Designed for impact. Powered by collaboration.
+All RMDS repositories are open-sourced under the [MIT License](https://choosealicense.com/licenses/mit/) unless otherwise specified. This allows for academic, commercial, and community use with proper attribution.
+
+## Our Vision
+
+We envision a future where intelligent, affordable, and accessible medical tools can assist people in even the most remote corners of the world. We are committed to responsible innovation, ethical data practices, and impactful open-source development.
+
+We invite you to be part of our journey as we continue building a smarter, healthier tomorrow — powered by students, built for humanity.
